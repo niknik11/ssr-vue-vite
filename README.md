@@ -13,3 +13,6 @@ To run this project, install it locally using npm:
 $ cd ssr-vue-vite
 $ npm install
 $ npm run server
+
+
+Go to http://localhost:3001
