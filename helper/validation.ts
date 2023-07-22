@@ -1,4 +1,14 @@
-import { DateTime } from "luxon";
+/**
+ * Validate input errors.
+ *
+ * @param {object[]} params - Array of input values
+ * @param {object[]} rules - Array of input rules
+ * @return {object[]} Input errors array
+ *
+ * @example
+ *
+ *     validate(params, rules)
+ */
 
 const validate = (params: object, rules: any) => {
   var errors = {};
@@ -13,6 +23,18 @@ const validate = (params: object, rules: any) => {
   }
   return errors;
 };
+
+/**
+ * Check rules.
+ *  @param {string} type - Validation type
+ *  @param {key} type - Input key
+ *  @param {object[]} params - Array of existing error
+ * @return {object[]} Input errors array
+ *
+ * @example
+ *
+ *    checkRule(rule.type, key, params, errors, rule)
+ */
 
 const checkRule = (
   type: any,
