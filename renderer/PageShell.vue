@@ -1,5 +1,5 @@
 <template>
-  <div class="layout flex m-auto">
+  <div class="flex m-auto layout">
     <div class="content min-h-[100vh] w-full">
       <slot />
     </div>
@@ -17,7 +17,7 @@ import Link from "./Link.vue";
 
 @layer components {
   .btn-primary {
-    @apply bg-[#046a38] text-white rounded-[5px] border border-[#046a38] hover:bg-[#046a38] normal-case font-medium;
+    @apply bg-[#28A745] text-white rounded-[5px] border border-[#28A745] hover:bg-[#28A745] normal-case font-medium;
   }
 }
 </style>
