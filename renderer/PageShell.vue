@@ -17,7 +17,7 @@ import Link from "./Link.vue";
 
 @layer components {
   .btn-primary {
-    @apply bg-[#28A745] text-white rounded-[5px] border border-[#28A745] hover:bg-[#28A745] normal-case font-medium;
+    @apply bg-[#28A745] text-white rounded-[5px] border border-[#28A745] hover:border-[#28A745] hover:bg-[#28A745] normal-case font-medium;
   }
 }
 </style>
