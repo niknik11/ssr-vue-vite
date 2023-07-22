@@ -1,14 +1,6 @@
 <template>
-  <div class="layout flex max-h-[900px] m-auto">
-    <div class="navigation p-5 flex flex-col items-center leading-[1.8em]">
-      <a href="/" class="logo mt-5 mb-[10px]">
-        <img src="./logo.svg" height="64" width="64" alt="logo" />
-      </a>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-    </div>
-    <div
-      class="content p-5 border-l-[2px] border-[#eee] min-h-[100vh] pb-[50px]">
+  <div class="layout flex m-auto">
+    <div class="content min-h-[100vh] w-full">
       <slot />
     </div>
   </div>
@@ -22,4 +14,10 @@ import Link from "./Link.vue";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#046a38] text-white rounded-[5px] border border-[#046a38] hover:bg-[#046a38] normal-case font-medium;
+  }
+}
 </style>

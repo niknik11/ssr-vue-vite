@@ -4,9 +4,10 @@ export default {
     "./index.html",
     "./pages/**/*.{vue,js,ts,jsx,tsx}",
     "./renderer/**/*.{vue,js,ts,jsx,tsx}",
+    "./components/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
